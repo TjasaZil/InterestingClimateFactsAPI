@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
-
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [AppComponent, DashboardComponent],
-  imports: [BrowserModule, NgbModule],
+  imports: [BrowserModule, NgbModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
