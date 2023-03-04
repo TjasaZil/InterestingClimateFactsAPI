@@ -4,7 +4,6 @@ Interesting Climate Facts is a free open source API that provides the user with 
 
 ### API Reference:
 
-- Get a random fact
 - list all the facts
 - get a fact by id
 - get fact by keyword
