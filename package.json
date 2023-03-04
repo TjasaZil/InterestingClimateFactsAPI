@@ -4,9 +4,12 @@
   "description": "A free open source API that returns interesting climate facts",
   "main": "src/index.js",
   "type": "module",
+  "engines":{
+"node":"19.x"
+  },
   "scripts": {
     "test": "jest",
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
