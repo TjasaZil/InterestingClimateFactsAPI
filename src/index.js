@@ -32,6 +32,13 @@ app.get("/", (req, res) => {
   res.json("Welcome to the Interesting Climate Facts API");
 });
 
+//* get random facts
+app.get("/random", (req, res) => {
+  const randomIndex = Math.floor(Math.random() * facts.length);
+  const randomFact = facts[randomIndex].fact;
+  res.json(randomFact);
+});
+
 //* get a list of all the facts
 app.get("/facts", (req, res) => {
   res.json(facts);
@@ -55,6 +62,8 @@ app.get("/search/:term", (req, res) => {
   const searchResults = facts.filter((fact) => {
     if (fact.fact) {
       return fact.fact.toLowerCase().includes(searchTerm);
+    } else {
+      res.status(404).json({ error: `Fact with term ${searchTerm} not found` });
     }
   });
   res.json(searchResults);

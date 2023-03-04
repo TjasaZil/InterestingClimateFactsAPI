@@ -2,11 +2,48 @@
 
 Interesting Climate Facts is a free open source API that provides the user with different facts and figures about environment. If you are interested in contributing, please check out the Contributors Guide.
 
-### API Reference:
+## API Reference:
 
-- list all the facts
-- get a fact by id
-- get fact by keyword
+- List all of the facts
+- Get a random fact
+- Get a fact by id
+- Get facts by term
+
+## Examples
+
+- these are examples of the use of api
+
+## Get all facts
+
+Returns a list of all the facts
+
+```js
+GET / facts;
+```
+
+## get a random fact
+
+Returns a single random fact.
+
+```js
+GET / random;
+```
+
+## Get a fact by id
+
+Returns a fact with a specific id. Returns 404 if
+
+```js
+GET /fact/:id
+```
+
+## Get facts by term
+
+Returns all of the facts that include a term. Returns 404 if there are no facts that include the searches term.
+
+```js
+GET /search/:term
+```
 
 ### Facts scraped from:
 
@@ -16,8 +53,8 @@ Interesting Climate Facts is a free open source API that provides the user with 
 
 ### Technology used:
 
-- Node.js
-- Express.js
-- Cheerio
-- Axios
-- Jest
+- [Node.js](https://nodejs.org/en/)
+- [Express.js](https://expressjs.com/)
+- [Cheerio](https://cheerio.js.org/)
+- [Axios](https://axios-http.com/docs/intro)
+- [Jest](https://jestjs.io/)
