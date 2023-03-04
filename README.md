@@ -15,6 +15,15 @@ https://icf-api.vercel.app/
 - Get a fact by id
 - Get facts by term
 
+## API response:
+
+```js
+{
+  id: number; // id for finding specific facts
+  fact: string; // a fact
+}
+```
+
 ## Get all facts
 
 Returns a list of all the facts
