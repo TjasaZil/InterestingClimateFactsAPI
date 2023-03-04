@@ -2,6 +2,12 @@
 
 Interesting Climate Facts is a free open source API that provides the user with different facts and figures about environment. If you are interested in contributing, please check out the Contributors Guide.
 
+## URL:
+
+```js
+https://icf-api.vercel.app/
+```
+
 ## API Reference:
 
 - List all of the facts
