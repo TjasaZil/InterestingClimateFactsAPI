@@ -12,15 +12,27 @@ let facts = [];
 let id = 0;
 
 sites.forEach((site) => {
+  //let id = 0;
   axios
     .get(site.address)
     .then((response) => {
       const html = response.data;
       const $ = cheerio.load(html);
       $("li:not(:has(>a))", html).each(function () {
-        const fact = $(this).text();
+        const fact = $(this).text().trim(); /*
         if (fact !== " " && fact !== "Close this sub-navigation") {
           facts.push({ id, fact });
+          id++;
+        }*/
+        //const trimmedFact = fact.replace(/(\.|!|\?|")(\s*\d+\s*)$/, "$1");
+        const trimmedFact = fact
+          .replace(/(?:[\.\?!]\s*\d+\b|”\s*\d+\b)/g, "")
+          .trim();
+        if (
+          trimmedFact !== " " &&
+          trimmedFact !== "Close this sub-navigation"
+        ) {
+          facts.push({ id, fact: trimmedFact });
           id++;
         }
       });
