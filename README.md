@@ -53,4 +53,3 @@ GET /search/:term
 - [Express.js](https://expressjs.com/)
 - [Cheerio](https://cheerio.js.org/)
 - [Axios](https://axios-http.com/docs/intro)
-- [Jest](https://jestjs.io/)
