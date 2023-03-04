@@ -72,4 +72,4 @@ app.get("/search/:term", (req, res) => {
 app.listen(PORT, () => console.log(`server running on port ${PORT}`));
 
 // index.js
-module.exports = app;
+export default app;
