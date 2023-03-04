@@ -6,7 +6,7 @@ import { sites } from "./sites.js";
 
 const app = express();
 
-const facts = [];
+let facts = [];
 let id = 0;
 
 sites.forEach((site) => {
