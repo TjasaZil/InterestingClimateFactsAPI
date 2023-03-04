@@ -3,8 +3,10 @@ import express from "express";
 import axios from "axios";
 import cheerio from "cheerio";
 import { sites } from "./sites.js";
+import cors from "cors";
 
 const app = express();
+app.use(cors());
 
 let facts = [];
 let id = 0;
