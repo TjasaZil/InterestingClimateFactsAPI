@@ -18,8 +18,8 @@ https://icf-api.vercel.app/
 ## Examples
 
 - [Generate random quote - Codesandbox](https://codesandbox.io/p/sandbox/generate-random-climate-fact-0n71vx?file=%2Fsrc%2FApp.vue)
-- [Search facts by term](https://codesandbox.io/p/sandbox/search-by-term-scqibf?file=%2FREADME.md)
-- [Search term by ID](https://codesandbox.io/p/sandbox/search-by-id-y0f22e?file=%2FREADME.md)
+- [Search facts by term - Codesandbox](https://codesandbox.io/p/sandbox/search-by-term-scqibf?file=%2FREADME.md)
+- [Search term by ID - Codesandbox](https://codesandbox.io/p/sandbox/search-by-id-y0f22e?file=%2FREADME.md)
 
 ## API response:
 
