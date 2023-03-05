@@ -19,12 +19,7 @@ sites.forEach((site) => {
       const html = response.data;
       const $ = cheerio.load(html);
       $("li:not(:has(>a))", html).each(function () {
-        const fact = $(this).text().trim(); /*
-        if (fact !== " " && fact !== "Close this sub-navigation") {
-          facts.push({ id, fact });
-          id++;
-        }*/
-        //const trimmedFact = fact.replace(/(\.|!|\?|")(\s*\d+\s*)$/, "$1");
+        const fact = $(this).text().trim();
         const trimmedFact = fact
           .replace(/(?:[\.\?!]\s*\d+\b|”\s*\d+\b)/g, "")
           .trim();
