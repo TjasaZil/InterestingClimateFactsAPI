@@ -1,6 +1,6 @@
 # Interesting Climate Facts API
 
-Interesting Climate Facts is a free open source API that provides the user with different facts and figures about environment. If you are interested in contributing, please check out the Contributors Guide.
+Interesting Climate Facts is a free open source API that provides the user with different facts and figures about environment.
 
 ## URL:
 
